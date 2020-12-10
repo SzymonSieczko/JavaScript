@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>First Steps</title>
+        
+    </head>
+    <body>
+        <label for="number">Podaj liczbe: </label>
+        <input type="number" id="number" required min="0">
+        <button>Submit</button>
+        <script>
+            let myButton = document.querySelector('button');
+            myButton.onclick = function()
+            {
+                let k=true;
+                let x=document.getElementById("number").value;
+                for( let i =2;i<=Math.sqrt(x);i++)
+                {
+                    if(x%i==0)
+                    {
+                        k=false;
+                        break;
+                    }
+                    console.log(i);
+                }
+                if(k==true)
+                    alert("Liczba pierwsza");
+                else
+                    alert("Liczba złożona");
+            }
+        </script>
+    </body>
+</html>
