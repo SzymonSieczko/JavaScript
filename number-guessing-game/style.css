@@ -1,0 +1,26 @@
+body{
+    width: 50%;
+    margin: 20px auto;
+    font-family: sans-serif;
+    line-height: 23px;
+    border: solid 2px black;
+    border-radius: 15px;
+    padding: 30px 20px;
+
+}
+   
+#guess{
+    width: 30%;
+}
+
+#title{
+    background-color:rgba(241, 149, 113, 0.616);
+    color: rgb(81, 29, 102);
+    border: solid 2px black;
+    border-radius: 8px;
+    padding:10px 20px; 
+    text-align: center;
+    margin: 0;
+}
+
+

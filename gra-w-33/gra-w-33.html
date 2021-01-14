@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gra w 33</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="game">
+            <img id="logo" src="images/logo.png">
+            <div class="buttons-container">
+                <button class="buttons">Zagraj</button>
+                <button class="buttons">Instrukcja</button>
+                <div class="controls">
+                    <button class="buttons settings" id="button-sound"><img class="speaker" id="sound-control" src="images/speaker-on.png"></button>
+                    <button class="buttons settings" id="button-music"><img class="speaker" id="music-control" src="images/music-on.png"></button>
+                    <audio id="music" autoplay="true" loop="true">
+                        <source src="sounds/HOME - Resonance.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                      </audio>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
