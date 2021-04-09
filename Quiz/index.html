@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="which">(1/5)</div>
+        <h2 id="pytanie">Ile ludzi pracuje w Artifex Mundi?</h2>
+        <hr>
+        <form id="quiz-form">
+            <label for="a" class="input-radio"><span>130</span><input type="radio" id="a" value="a" name="odp" ><div class="checkmark"></div></label>
+            <label for="b" class="input-radio"><span>110</span><input type="radio" id="b" value="b" name="odp" ><div class="checkmark"></div></label>
+            <label for="c" class="input-radio"><span>90</span><input type="radio" id="c" value="c" name="odp" ><div class="checkmark"></div></label>
+            <label for="d" class="input-radio"><span>70</span><input type="radio" id="d" value="d" name="odp" ><div class="checkmark"></div></label>
+        </form>
+        <button type="button" id="button">Następne</button>
+        <div class ="result-screen">
+            <h2>Twój wynik to: </h2>
+            <p id="result"></p>
+            <p id="comment"></p>
+            <button type="button" id="button2">Spróbuj jeszcze raz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
