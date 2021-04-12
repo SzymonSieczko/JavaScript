@@ -1,0 +1,86 @@
+.rules-btn{
+    position: absolute;
+    bottom: 20px;
+    right:40px;
+    background:none;
+    border:solid $Header-Outline 2px;
+    color:white;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 2px;
+
+    &:hover{
+        background-color: grey;
+    }
+}
+
+.modal{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    display: grid;
+    place-items: center;
+    background:$Shadow-Medium;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    //visibility:hidden;
+}
+
+.show-modal{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.modal_container{
+    //height: 370px;
+    width:350px;
+    //display:flex;
+    //flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding:30px;
+
+    img{
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+.modal_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+    margin-bottom: 30px;
+
+    button{
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        height: 20px;
+        opacity: 0.7;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    h2{
+        margin:0;
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 30px;
+        color:$Dark-Text;
+    }
+}
+

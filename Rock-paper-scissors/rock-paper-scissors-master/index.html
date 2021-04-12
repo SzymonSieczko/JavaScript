@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  <script src ="scripts/script.js" defer></script>
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <img src="images/logo.svg">
+    <div class="score">
+      <div class="score_text">Score</div>
+      <div class="score_number">12</div>
+    </div>
+  </header>
+  <section class="board">
+    <img src="images/bg-triangle.svg" class="connection">
+    <button class="btn scissor">
+      <div class="sign" >
+        <img src="images/icon-scissors.svg" class="icon">
+      </div>
+    </button>
+    <button class="btn paper">
+      <div class="sign" >
+        <img src="images/icon-paper.svg" class="icon">
+      </div>
+    </button> 
+    <button class="btn rock">
+      <div class="sign" >
+        <img src="images/icon-rock.svg" class="icon">
+      </div>
+    </button> 
+  </section>
+  <button class="rules-btn">rules</button>
+  <div class="modal">
+    <div class="modal_container">
+      <header class="modal_header">
+        <h2 class="modal_heading">rules</h2>
+        <button class="close-btn">
+          <img src="images/icon-close.svg">
+        </button>
+      </header>
+      <img src="images/image-rules.svg">
+    </div>
+  </div>
+</div>
+</body>
+</html>
